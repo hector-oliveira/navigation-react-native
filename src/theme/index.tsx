@@ -1,5 +1,5 @@
 export default {
-  colors: {
+  COLORS: {
     primary_900: '#280540',
     primary_800: '#3B0C59',
 
@@ -9,10 +9,12 @@ export default {
     shape: '#FFFFFF',
     title: '#8355d8',
     text: '#969CB2',
-    background: '#F0F2F5',
+    
+    background_first: '#1C0D25',
+    background_second: '#0d2525',
   },
 
-  fonts: {
+  FONTS: {
     regular: 'Roboto_400Regular',
     medium: 'Roboto_500Medium',
     bold: 'Roboto_700Bold',
