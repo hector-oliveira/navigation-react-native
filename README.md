@@ -9,8 +9,8 @@
 - [x] Definir paleta de cores da aplicação
 - [x] Configurar o theme da aplicação
 - [x] Implementar novo módulo do splash screen
-- [ ] Configurar o react navigation
-- [ ] Configurar o react navigation stack
+- [x] Configurar o react navigation
+- [x] Configurar o react navigation stack
 - [ ] Configurar o react navigation bottom tabs
 - [ ] Configurar o react navigation drawer
 - [ ] Tipar as rotas
