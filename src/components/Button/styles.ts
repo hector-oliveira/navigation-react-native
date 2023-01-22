@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 
 export const Container = styled.TouchableOpacity`
-  background: ${({theme}) => theme.colors.primary_900} ;
+  background: ${({theme}) => theme.COLORS.primary_900} ;
   border-radius: 4px;
   width: 100%;
   align-items: center;
@@ -12,6 +12,6 @@ export const Container = styled.TouchableOpacity`
 
 export const Title = styled.Text`
   font-size: 20px;
-  color: ${({theme}) => theme.colors.shape};
-  font-family: ${({ theme }) => theme.fonts.regular};
+  color: ${({theme}) => theme.COLORS.shape};
+  font-family: ${({ theme }) => theme.FONTS.regular};
 `;
