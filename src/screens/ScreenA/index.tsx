@@ -1,30 +1,25 @@
 import React from 'react';
-import { Alert } from 'react-native';
 
-// importe dos componentes da aplicação
-import { Button } from '@components/Button';
+// impote dos componentes da aplicação
+import { ScreenComponents } from '@components/ScreenComponents';
 
 // importe dos estilos da aplicação
 import {
-  Container,
-  Title,
-  ContainerButton
+  Container
 } from './styles';
 
-export const ScreenA = () => {
-
-  const handleButton = (txt: string) => {
-    Alert.alert(`Você clicou no botão ${txt}`);
-  }
+export const ScreenA = ({navigation}) => {
+  const handleClickNavigation = () => {
+    // navegação para a tela B
+    navigation.navigate('ScreenB');
+  };
   return (
     <Container>
-      <Title>Clique no botão abaixo</Title>
-      <ContainerButton>
-        <Button 
-          title="A"
-          onPress={() => handleButton('A')}
-        />
-      </ContainerButton>
+      <ScreenComponents 
+        screenTitle='Página A'
+        buttonTitle='Clique para ir à tela B'
+        onNavigation={handleClickNavigation}
+      />
     </Container>
   );
 };
