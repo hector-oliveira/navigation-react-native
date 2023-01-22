@@ -36,7 +36,7 @@ SplashScreen.preventAutoHideAsync();
 import { StyleSheet, View } from 'react-native';
 
 // importação das telas ou rotas da aplicação
-import { ScreenA } from '@screens/ScreenA';
+import { Routes } from '@routes/index';
 
 export default function App() {
   const [appIsReady, setAppIsReady] = useState(false);
@@ -80,7 +80,7 @@ export default function App() {
   return(
     <View style={styles.container} onLayout={onLayoutRootView}>
       <ThemeProvider theme={THEME}>
-        <ScreenA />
+        <Routes />
       </ThemeProvider>
     </View>
   );
