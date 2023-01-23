@@ -11,6 +11,6 @@
 - [x] Implementar novo módulo do splash screen
 - [x] Configurar o react navigation
 - [x] Configurar o react navigation stack
+- [x] Tipar as rotas
 - [ ] Configurar o react navigation bottom tabs
 - [ ] Configurar o react navigation drawer
-- [ ] Tipar as rotas
