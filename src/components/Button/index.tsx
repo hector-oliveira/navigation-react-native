@@ -13,7 +13,7 @@ import {
 export const Button= ({ title, ...rest}:ButtonProps ) => {
   return (
     <Container {...rest}>
-      <Title>{title}</Title>
+      <Title {...rest}>{title}</Title>
     </Container>
   );
 };
