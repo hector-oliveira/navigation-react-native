@@ -1,8 +1,5 @@
-import React from 'react';
-import { Alert } from 'react-native';
-
-// importe dos componentes da aplicação
 import { Button } from '@components/Button';
+import React from 'react';
 
 // importe dos estilos da aplicação
 import {
@@ -14,6 +11,7 @@ import {
 type screenProps = {
   screenTitle: string;
   buttonTitle: string;
+  styleButton?: any;
   onNavigation: () => void;
 }
 
@@ -26,6 +24,7 @@ export const ScreenComponents = (props: screenProps) => {
         <Button 
           title={props.buttonTitle}
           onPress={props.onNavigation}
+          style={props.styleButton}
         />
       </ContainerButton>
     </Container>
