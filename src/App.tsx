@@ -78,8 +78,16 @@ export default function App() {
   }
 
   return(
+    // Para que o splash da aplicação funcione corretamente,
+    // é necessário que o componente view tenha o atributo onLayout
+    // e que o componente ThemeProvider esteja dentro do componente view,
+    // e não dentro do componente NavigationContainer
     <View style={styles.container} onLayout={onLayoutRootView}>
+      {/* O ThemeProvider é responsável por passar */}
+      {/* todo theme da aplicação */}
       <ThemeProvider theme={THEME}>
+        {/* O componente Routes é responsável por */}
+        {/* renderizar as rotas da aplicação */}
         <Routes />
       </ThemeProvider>
     </View>
@@ -87,6 +95,9 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
+  // O componente view precisa preencher
+  // toda a tela da aplicação, por tanto
+  // o atributo flex: 1 é atribuido.
   container: {
     flex: 1,
   }
