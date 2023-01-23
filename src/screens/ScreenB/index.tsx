@@ -1,23 +1,27 @@
+import { ScreenComponents } from '@components/ScreenComponents';
+import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 
-import { ScreenComponents } from '@components/ScreenComponents';
-
-// importe dos estilos da aplicação
 import {
   Container,
 } from './styles';
 
-export const ScreenB = ({navigation}) => {
+
+export const ScreenB = () => {
+  const navigation = useNavigation();
+  
   const handleClickNavigation = () => {
-    // navegação para a tela A
-    navigation.navigate('ScreenA');
+    // navegação para a tela card
+    navigation.navigate('card');
   }
+
   return (
     <Container>
       <ScreenComponents 
         screenTitle='Página B'
-        buttonTitle='Clique para ir à tela A'
+        buttonTitle='Clique no botão, tio!!!'
         onNavigation={handleClickNavigation}
+        styleButton={{ backgroundColor: '#DE5A0D' }}
       />
     </Container>
   );

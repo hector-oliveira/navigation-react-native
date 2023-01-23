@@ -6,3 +6,4 @@ export const Container = styled.View`
   justify-content: center;
   background-color: ${({ theme }) => theme.COLORS.background_second};
 `;
+
