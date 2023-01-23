@@ -20,7 +20,7 @@ export const Card = () => {
         screenTitle='Página Card'
         buttonTitle='Clique no botão, tio!!!'
         onNavigation={handleClickNavigation}
-        styleButton={{ backgroundColor: '#F7FF9E', color: '#6210A3' }}
+        styleButton={{ backgroundColor: '#F7FF9E', color: '#520d8a' }}
       />
     </Container>
   );
